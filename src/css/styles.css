@@ -9,7 +9,7 @@
 #particles-container {
   width: 100vw;
   height: 100vh;
-  background-color: #ffffff;
+  background-color: #151616;
   position: relative;
 }
 
@@ -17,7 +17,7 @@
   min-height: 100vh;
   width: 100vw;
   position: absolute;
-  color: black;
+  color: #ffffff;
   background-color: transparent;
   top: 0;
 }
@@ -40,7 +40,7 @@
 }
 
 .links a {
-  color: black;
+  color: #ffffff;
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
   margin-left: 20px;
@@ -48,6 +48,7 @@
   font-weight: bold;
   border-bottom: 5px solid transparent;
   transition: 0.5s;
+  font-size: 20px;
 }
 
 .links a:hover{
@@ -69,6 +70,7 @@
   line-height: 45px;
   user-select: none;
   pointer-events: none;
+  font-weight: bold;
 }
 
 .highlight {
