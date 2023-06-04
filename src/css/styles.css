@@ -4,8 +4,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 
+/* Header */
 #particles-container {
   width: 100vw;
   height: 100vh;
@@ -41,7 +43,6 @@
 
 .links a {
   color: #ffffff;
-  font-family: 'Raleway', sans-serif;
   text-decoration: none;
   margin-left: 20px;
   padding: 10px;
@@ -65,7 +66,6 @@
 }
 
 .text {
-  font-family: 'Raleway', sans-serif;
   font-size: 45px;
   line-height: 45px;
   user-select: none;
@@ -82,3 +82,70 @@ section {
   background-color: #ffffff;
 }
 
+/* About */
+#about {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.title-bar {
+  margin-top: 10px;
+  width: 130px;
+  height: 4px;
+  background-color: rgb(95, 163, 227);
+  border-radius: 5px;
+}
+
+.title h2 {
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+
+.description-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:  0px 40px;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+/* Skilss */
+#skills {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.grid-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  align-items: center;
+}
+.card-skill{
+  display: flex;
+  width: 250px;
+  height: 350px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
