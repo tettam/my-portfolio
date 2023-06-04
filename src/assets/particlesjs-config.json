@@ -8,7 +8,7 @@
       }
     },
     "color": {
-      "value": "#2A4863"
+      "value": "#5FA3E3"
     },
     "shape": {
       "type": "edge",
@@ -75,7 +75,7 @@
         "mode": "repulse"
       },
       "onclick": {
-        "enable": false,
+        "enable": true,
         "mode": "push"
       },
       "resize": true
