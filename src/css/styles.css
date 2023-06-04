@@ -94,7 +94,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 150px;
+  height: 250px;
 }
 
 .title-bar {
@@ -121,17 +121,14 @@ section {
 }
 
 /* Skilss */
-#skills {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 100px;
+#skill {
+  background-color:#314C64;
+  padding-bottom: 80px;
 }
 
-
-#projects {
+.skills {
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
 }
 
 .grid-cards{
@@ -144,8 +141,40 @@ section {
 }
 .card-skill{
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 250px;
-  height: 350px;
-  border: 1px solid black;
+  height: 250px;
+  border: 0.5px solid rgb(95, 163, 227);;
+  box-shadow: 0px 4px 40px rgba(78, 7, 7, 0.15);
   border-radius: 5px;
+  background-color: #ffffff;
 }
+.icons {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  width: 190px;
+  padding: 5px;
+}
+.title-skill {
+  font-size: 25;
+  font-weight: bold;
+  margin: 20px 0px 10px 20px;
+}
+img {
+  width: 30px;
+  margin-right: 5px;
+}
+
+/* Projects */
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
