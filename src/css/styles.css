@@ -37,19 +37,25 @@
 }
 
 .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
-  padding: 20px;
+  padding: 5px;
+  width:100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: auto;
+  z-index: 99999999;
 }
 
 .links a {
   color: #ffffff;
   text-decoration: none;
-  margin-left: 20px;
   padding: 10px;
   font-weight: bold;
   border-bottom: 5px solid transparent;
   transition: 0.5s;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .links a:hover{
@@ -387,7 +393,12 @@ background: #314C64;
     margin-bottom: 250px;
   }
   .text-project {
+    background-color: rgba(0, 0, 0, 0.8);
     margin: 450px 50px 0px 50px;
     width: auto;
+  }
+
+  .links a {
+    font-size: 13px;
   }
 }
