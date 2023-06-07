@@ -33,8 +33,8 @@
 </header>
 
 
-<section>
-  <div class="container" id="about">
+<section id="about">
+  <div class="container about">
     <div class="title">
       <h2>SOBRE MIM</h2>
       <div class="container-cube"></div>
@@ -204,7 +204,31 @@
         </div>        
       </div>
     </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contacts container">
+    <div class="title">
+      <h2 style="color:  #ffff">CONTATO</h2>
+      <span class="title-bar"></span>
+    </div>
+    <div class="phrase">
+      <p>Alguma dúvida ou interesse em trabalharmos juntos? Deixe suas informações e retonarei o mais breve possível.</p>
+    </div>
+    <form action="https://api.staticforms.xyz/submit" method="post" class="form-contact">
+ 
+      <input type="text" name="name" placeholder="Nome" autocomplete="off" required>
+      <input type="text" name="email" placeholder="Email" autocomplete="off" required>
+      <textarea cols="50" rows="5" name="message" placeholder='Mensagem' autocomplete="off" required></textarea>
+
+      <button type="submit" class="btn-contact">Enviar</button>
+
+      <input type="hidden" name="accessKey" value="91da870d-c4f9-4527-a50e-9dfbcdbfc16e">
+      <input type="hidden" name="redirectTo" value="https://tettam.github.io/my-portfolio/"> 
+    </form>
     
+     
   </div>
 </section>
 

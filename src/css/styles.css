@@ -94,7 +94,12 @@ section {
 #about {
   display: flex;
   flex-direction: column;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
 }
 
 .container-cube{
@@ -316,6 +321,68 @@ background: #314C64;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
+
+/* Contact */
+#contact {
+  background-color:#314C64;
+  padding-bottom: 80px;
+}
+
+.contacts {
+  font-size: 15px;
+  display: flex;
+  width: auto;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  margin: auto;
+}
+.phrase {
+  margin: auto;
+  padding: 20px;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px;
+  width: auto;
+}
+
+input {
+  color: #fff;
+  border: none;
+  padding: 5px;
+  background-color: #556879;
+  margin-bottom: 10px;
+}
+
+textarea {
+  padding: 5px;
+  color: #fff;
+  border: none;
+  width: auto;
+  background-color: #556879;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+.btn-contact {
+  margin-left: auto;
+  color: #fff;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #151616;
+  border: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.btn-contact:hover {
+  background-color: #513434;
+}
+
 .btn-12 span:nth-child(1) {
   box-shadow:
    -7px -7px 20px 0px #fff9,
@@ -402,3 +469,5 @@ background: #314C64;
     font-size: 13px;
   }
 }
+
+
