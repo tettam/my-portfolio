@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marco Tettamanti</title>
 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="shortcut icon" href="src/assets/icons8-m-67.png" type="image/x-icon">
   <link rel="stylesheet" href="src/css/styles.css">
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
@@ -17,11 +18,11 @@
 <header id="home">
   <div class="nav-links">
     <div class="links">
-      <a href="#">Home</a>
-      <a href="#">Sobre</a>
-      <a href="#">Habilidades</a>
-      <a href="#">Projetos</a>
-      <a href="#">Contato</a>
+      <a href="#home" class="scroll-link">Home</a>
+      <a href="#about" class="scroll-link">Sobre</a>
+      <a href="#skills" class="scroll-link">Habilidades</a>
+      <a href="#projects" class="scroll-link">Projetos</a>
+      <a href="#contact" class="scroll-link">Contato</a>
     </div>
   </div>
   <div class="container apresentation">
@@ -51,7 +52,7 @@
   </div>
 </section>
 
-<section id="skill">
+<section id="skills">
   <div class="skills">
     <div class="title">
       <h2 style="color:  #ffff">HABILIDADES</h2>
@@ -59,7 +60,7 @@
     </div>
     
     <div class="grid-cards">
-      <div class="card-skill">
+      <div class="card-skill" data-aos="flip-left">
         <div class="title-skill">Backend</div>
         <div class="list-skill">
           <div class="icons">
@@ -83,7 +84,8 @@
           </div>
         </div>
       </div>
-      <div class="card-skill">
+
+      <div class="card-skill" data-aos="flip-right">
         <div class="title-skill">Frontend</div>
         <div class="list-skilss">
 
@@ -105,22 +107,23 @@
           </div>
         </div>
       </div>
-      <div class="card-skill">
+
+      <div class="card-skill" data-aos="flip-up">
         <div class="title-skill">Ferramentas</div>
         <div class="list-skilss">
 
           <div class="icons">
-            <img src="src/assets/icons8-github.png" alt="GitHub">
+            <img src="src/assets/icons8-github.svg" alt="GitHub">
             GitHub
           </div>
           <div class="icons">
             <img src="src/assets/postman-icon.png" alt="GitHub">
             Postman
           </div>
-
         </div>
       </div>
-      <div class="card-skill">
+
+      <div class="card-skill" data-aos="flip-down">
         <div class="title-skill">Estudando atualmente</div>
         <div class="list-skilss">
 
@@ -146,74 +149,71 @@
   </div>
 </section>
 
-<section>
-  <div id="projects">
-    <div class="title">
-      <h2>PROJETOS</h2>
-      <span class="title-bar"></span>
+<section id="projects">
+  <div class="title">
+    <h2>PROJETOS</h2>
+    <span class="title-bar"></span>
+  </div>
+  <div class="grid-projects container">
+    <div class="cards-projects" data-aos="fade-right">
+      <div class="img-container">
+        <img src="./src/assets/oficina-tablet.png" alt="sistema-oficina" class="img-project">
+      </div>
+      
+      <div class="text-project">
+        <div class="title-project">Sistema para oficinas automotivas</div>
+        <div class="description-project">Um software feito para criar orçamentos de forma rápida e simples.</div>
+        <div class="icons-project">
+          <img src="src/assets/icons8-java.png" alt="Java">
+          <img src="src/assets/icons8-javascript.png" alt="JavaScript">
+          <img src="src/assets/icons8-reactjs.png" alt="JavaScript">
+          <img src="src/assets/icons8-postgreesql.png" alt="JavaScript">
+        </div>           
+        <div class="link-project">
+          <a href="https://sistema-oficina-automotiva.vercel.app/" class="btn-12" target="_blank"><span>Vercel</span><span>Site</span></a>
+          <a href="https://github.com/tettam/sistema-oficina-automotiva" class="btn-12" target="_blank"><span>GitHub</span><span>Código</span></a>       
+        </div>
+      </div>        
     </div>
-    <div class="grid-projects container">
-      <div class="cards-projects">
-        <div class="img-container">
-          <img src="./src/assets/oficina-tablet.png" alt="sistema-oficina" class="img-project">
-        </div>
-        
-        <div class="text-project">
-          <div class="title-project">Sistema para oficinas automotivas</div>
-          <div class="description-project">Um software feito para criar orçamentos de forma rápida e simples.</div>
-          <div class="icons-project">
-            <img src="src/assets/icons8-java.png" alt="Java">
-            <img src="src/assets/icons8-javascript.png" alt="JavaScript">
-            <img src="src/assets/icons8-reactjs.png" alt="JavaScript">
-            <img src="src/assets/icons8-postgreesql.png" alt="JavaScript">
-          </div>           
-          <div class="link-project">
-            <a href="https://sistema-oficina-automotiva.vercel.app/" class="btn-12" target="_blank"><span>Vercel</span><span>Site</span></a>
-            <a href="https://github.com/tettam/sistema-oficina-automotiva" class="btn-12" target="_blank"><span>GitHub</span><span>Código</span></a>       
-          </div>
-        </div>        
-      </div>
 
-      <div class="cards-projects card-rigth">
-        <div class="img-container img-rigth">
-          <img  style="width: 250px" src="./src/assets/todoList.png" alt="sistema-oficina" class="img-project">
-        </div>
-        
-        <div class="text-project text-rigth">
-          <div class="title-project">To-do List</div>
-          <div class="description-project">Organizador de tarefas. Para persistência de dados utilizei Local Storage.</div>
-          <div class="icons-project">
-            <img src="src/assets/icons8-javascript.png" alt="JavaScript">
-            <img src="src/assets/icons8-html.png" alt="HTML">
-            <img src="src/assets/icons8-css3.png" alt="CSS">
-          </div>           
-          <div class="link-project">
-            <a href="https://tettam.github.io/todoList-js" class="btn-12" target="_blank"><span>GitHub</span><span>Site</span></a>
-            <a href="https://github.com/tettam/todoList-js" class="btn-12" target="_blank"><span>GitHub</span><span>Código</span></a>       
-          </div>
-        </div>        
+    <div class="cards-projects card-rigth" data-aos="fade-left">
+      <div class="img-container img-rigth">
+        <img  style="width: 250px" src="./src/assets/todoList.png" alt="sistema-oficina" class="img-project">
       </div>
+      
+      <div class="text-project text-rigth">
+        <div class="title-project">To-do List</div>
+        <div class="description-project">Organizador de tarefas. Para persistência de dados utilizei Local Storage.</div>
+        <div class="icons-project">
+          <img src="src/assets/icons8-javascript.png" alt="JavaScript">
+          <img src="src/assets/icons8-html.png" alt="HTML">
+          <img src="src/assets/icons8-css3.png" alt="CSS">
+        </div>           
+        <div class="link-project">
+          <a href="https://tettam.github.io/todoList-js" class="btn-12" target="_blank"><span>GitHub</span><span>Site</span></a>
+          <a href="https://github.com/tettam/todoList-js" class="btn-12" target="_blank"><span>GitHub</span><span>Código</span></a>       
+        </div>
+      </div>        
+    </div>
 
-      <div class="cards-projects">
-        <div class="img-container all-projects">
-          <img src="./src/assets/pomodoro.png" style="width: auto; height: 200px" alt="pomodoro" class="img-project">
-          <img src="./src/assets/calculadora.png" style="width: auto; height: 200px" alt="calculadora" class="img-project">
-        </div>
-        
-        <div class="text-project">
-          <div class="title-project">Outros projetos</div>
-          <div class="description-project">Foram criados para treinar minhas habilidades básicas de JS, HTML e CSS.</div>
-          <div class="link-project">
-            <a href="https://github.com/tettam" class="btn-12" target="_blank"><span>GitHub</span><span>Veja mais</span></a>      
-          </div>
-        </div>        
+    <div class="cards-projects" data-aos="fade-right">
+      <div class="img-container all-projects">
+        <img src="./src/assets/pomodoro.png" style="width: auto; height: 200px" alt="pomodoro" class="img-project">
+        <img src="./src/assets/calculadora.png" style="width: auto; height: 200px" alt="calculadora" class="img-project">
       </div>
+      
+      <div class="text-project">
+        <div class="title-project">Outros projetos</div>
+        <div class="description-project">Foram criados para treinar minhas habilidades básicas de JS, HTML e CSS.</div>
+        <div class="link-project">
+          <a href="https://github.com/tettam" class="btn-12" target="_blank"><span>GitHub</span><span>Veja mais</span></a>      
+        </div>
+      </div>        
     </div>
   </div>
 </section>
 
 <section id="contact">
-  
   <div class="email-sucess">
     Email enviado com sucesso!
   </div>
@@ -246,7 +246,7 @@
   </div>
   <div class="footer-icons">
     <a href="https://github.com/tettam" target="_blank">
-      <img src="./src/assets/icons8-github.png" alt="github" class="ok">
+      <img src="./src/assets/icons8-github.svg" alt="github" class="ok">
     </a>
     <a href="" target="_blank">
       <img src="./src/assets/icons8-linkedin-footer.png" alt="linkedin">
@@ -257,8 +257,10 @@
   </div>
 </footer>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     particlesJS.load('particles-container', 'src/assets/particlesjs-config.json');
+    AOS.init();
   </script>
   <script src="src/js/main.js"></script>
 </body>
