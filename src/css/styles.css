@@ -77,7 +77,6 @@
   line-height: 50px;
   letter-spacing: 2px;
   user-select: none;
-  pointer-events: none;
   font-weight: bold;
   margin: 15px;
 }
@@ -89,6 +88,63 @@
 
 section {
   background-color: #d5d5d5;
+}
+
+.contacts-cube {
+  display: flex;
+  margin-top: 20px;
+}
+
+.contacts-cube a {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 40px;
+  background-color: rgb(48, 130, 208, 0.6);
+}
+
+/* .moveLink {
+  position: relative;
+  display: inline-block;
+  animation: moveLink 15s infinite alternate linear;
+}
+.moveLink2 {
+  position: relative;
+  display: inline-block;
+  animation: moveLink2 15s infinite alternate linear;
+}
+
+@keyframes moveLink {
+  0% {
+    transform: translate(0,0);
+  }
+  50% {
+    transform: translate(200px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes moveLink2 {
+  0% {
+    transform: translateX(200px);
+  }
+  50% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(200px);
+  }
+} */
+
+.contacts-cube img {
+  width: 40px;
+  height: 40px;
 }
 
 /* About */
@@ -325,7 +381,7 @@ background: #314C64;
 
 /* Contact */
 .email-sucess {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   padding: 20px;
