@@ -4,7 +4,6 @@ const date = document.querySelector('.date');
 const schollLinks = document.querySelectorAll('.scroll-link')
 
 
-
 schollLinks.forEach((link) => {
   link.addEventListener('click', (e) => {
     e.preventDefault()
